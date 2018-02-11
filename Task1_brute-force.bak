@@ -1,0 +1,41 @@
+; Write, from scratch, a function in Racket
+; that uses a brute-force algorithm that takes a single positive integer
+; and return true if the number is a prime and false otherwise.
+; Call the function decide-prime.
+
+; Scheme prime numbers
+
+; Brute-Force Algorithm: An algorithm in computer science which involves
+; trying every possible solution to determine if it is correct.
+; It is not necessarily the least efficient method, though it is often less
+; efficient then other algorithms.
+
+; https://stackoverflow.com/questions/13791047/scheme-prime-numbers
+
+
+#lang racket
+
+(define (decide-prime p)
+  ; defines a function 'non-divisible-by'
+  (define (non-divisible-by n d)
+    ; if d is equal to 1 return true ((= d 1) == (d = 1))
+    (cond
+     ((= d 1) #true)
+     ; else if the remainder of n and d is equal to 0 return false
+     (else (if(= (remainder n d) 0)
+          #false
+          (non-divisible-by n (- d 1))))))
+  ; if p is equal to 1 pass '- p 1' ((- p 1) == (p - 1)) into the non-divisible-by function 
+  (if (= p 1)
+      #true
+      (non-divisible-by p (- p 1))))
+        
+;(decide-prime? 37); should return #t
+
+; Brute force check for numbers 2-30
+(define i 2) ; setting range start
+(for [(m (in-range i 30))] ; For/List for checking each number
+  (display "\n")(display m)(display " Results: ")
+  
+  (display (decide-prime m))) ; pass current number to fucntion
+
