@@ -19,19 +19,4 @@
         (cons (car m)
                '())))
 ;test lcycle
-(display "Lcycle:")
 (lcycle (list 1 2 3 4 5 19))
-
-(define (remove-last e)
-    (if (null? (cdr e))
-        '();replace last element with empty one 
-        (cons (car e) (remove-last (cdr e)))))
-
-
-; define rcycle
-(define (rcycle m)
-      (append (cons (last m) ; return last elemtent
-              (remove-last m); apend to the start
-                    )))
-(display "Rcycle:")
-(rcycle (list 1 2 3 4 5 19))
