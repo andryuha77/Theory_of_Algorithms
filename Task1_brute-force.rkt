@@ -1,3 +1,5 @@
+;By: Andrei Petruk G00328108
+
 ; Write, from scratch, a function in Racket
 ; that uses a brute-force algorithm that takes a single positive integer
 ; and return true if the number is a prime and false otherwise.

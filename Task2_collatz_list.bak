@@ -1,7 +1,5 @@
 #lang racket
 
-;By: Andrei Petruk G00328108
-
 ;Write, from scratch, a function in Racket that takes a positive integer n0 as input
 ;and returns a list by recursively applying the following operation, starting with the
 ;input number.
@@ -22,7 +20,8 @@
 (define list '())
 
 (define (collatz-list a)
-  
+  ;append to list
+  (append list a)
   (if (= a 1)
       list
        ;if odd/even run predefined function
