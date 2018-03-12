@@ -107,19 +107,35 @@ doesn’t matter. For example:
 > (sublsum (list 1 2 3 4 5))
 '()
 ```
+#### Solution steps:
+* Defined sublsum function which checks if sum of list equal 0 by using apply + list
+
+* Defined 3 lists a,b and c
+
+* Test by [filter](https://docs.racket-lang.org/reference/pairs.html?q=filter#%28def._%28%28lib._racket%2Fprivate%2Flist..rkt%29._filter%29%29) all [cobinations](https://docs.racket-lang.org/reference/pairs.html?q=combinations#%28def._%28%28lib._racket%2Flist..rkt%29._combinations%29%29) of the lists
+
+Task 4 was a nice task as built-in functions were allowed.
+
+---
 5. Write a function hamming-weight in Racket that takes a list l as input and returns
 the number of non-zero elements in it. For example:
 ```
 > (hamming-weight (list 1 0 1 0 1 1 1 0))
 5
 ```
+#### Solution steps:
+The [Hamming weight](https://en.wikipedia.org/wiki/Hamming_weight) of a string is the number of symbols that are different from the zero-symbol of the alphabet used. It is thus equivalent to the Hamming distance from the all-zero string of the same length.
+
+---
 6. Write a function hamming-distance in Racket that takes two lists and returns the
 number of positions in which they differ. For example:
 ```
 > (hamming-distance (list 1 0 1 0 1 1 1 0) (list 1 1 1 1 0 0 0 0))
 5
 ```
+#### Solution steps:
 
+---
 
 ### References:
 
