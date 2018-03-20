@@ -126,6 +126,8 @@ the number of non-zero elements in it. For example:
 #### Solution steps:
 The [Hamming weight](https://en.wikipedia.org/wiki/Hamming_weight) of a string is the number of symbols that are different from the zero-symbol of the alphabet used. It is thus equivalent to the Hamming distance from the all-zero string of the same length.
 
+I used nested if statements to complete this task. The first if statement checks if the list not null and second if a car of the list equal to 0, otherwise adding 1 to the car.
+
 ---
 6. Write a function hamming-distance in Racket that takes two lists and returns the
 number of positions in which they differ. For example:
