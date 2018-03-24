@@ -136,6 +136,9 @@ number of positions in which they differ. For example:
 5
 ```
 #### Solution steps:
+The [Hamming distance](https://en.wikipedia.org/wiki/Hamming_distance) between two strings of equal length is the number of positions at which the corresponding symbols are different. In other words, it measures the minimum number of substitutions required to change one string into the other, or the minimum number of errors that could have transformed one string into the other. In a more general context, the Hamming distance is one of several string metrics for measuring the edit distance between two sequences.
+
+This task is similar to the previous one hamilton-weight but involves comparison of two lists. First I checked if two lists next values not equal 0. Then if the values equal to each other do nothing or add 1 if the values differ.
 
 ---
 
@@ -151,5 +154,5 @@ adapted from: https://stackoverflow.com/questions/13791047/scheme-prime-numbers
 
 adapted from: https://docs.racket-lang.org/reference/pairs.html
 
-
+adapted from: https://en.wikipedia.org/wiki/Hamming_weight
 
