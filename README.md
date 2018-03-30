@@ -141,7 +141,43 @@ The [Hamming distance](https://en.wikipedia.org/wiki/Hamming_distance) between t
 This task is similar to the previous one hamilton-weight but involves comparison of two lists. First I checked if two lists next values not equal 0. Then if the values equal to each other do nothing or add 1 if the values differ.
 
 ---
+7. Write a function maj in Racket that takes three lists x, y and z of equal length and containing only 0’s and 1’s. It should return a list containing a 1 where two or more of x, y and z contain 1’s, and 0 otherwise. For example:
 
+```
+ > (maj (list 0 0 0 0 1 1 1 1) (list 0 0 1 1 0 0 1 1) (list 0 1 0 1 0 1 0 1))
+  '(0 0 0 1 0 1 1 1)
+```
+#### Solution steps: 
+* Define function maj  that takes three lists
+* if the value of list x null return empty space
+* else go through condition to see where two or more of x, y and z contain 1’s. Comparing values of x with y and x with z if they are equal adding x to the new list else value of y added.
+
+Task7_maj
+---
+8. Write a function chse in Racket that takes three lists x, y and z of equal length and containing only 0’s and 1’s. It should return a list containing the elements of y in the positions where x is 1 and the elements of z otherwise. For example
+```
+> (chse (list 0 0 0 0 1 1 1 1) (list 0 0 1 1 0 0 1 1) (list 0 1 0 1 0 1 0 1))
+ '(0 1 0 1 0 0 1 1)
+```
+#### Solution steps: 
+
+
+---
+9. Write a function sod2 in Racket that takes three lists x, y and z of equal length and containingonly0’sand1’s. Itshouldreturnalistcontaininga1wherethenumberof 1’s in a given position in x, y and z contains an odd nubmer of 1’s, and 0 otherwise. For example:
+```
+> (sod2 (list 0 0 0 0 1 1 1 1) (list 0 0 1 1 0 0 1 1) (list 0 1 0 1 0 1 0 1))
+ '(0 1 1 0 1 0 0 1)
+```
+#### Solution steps: 
+---
+10. Write a function lstq in Racket that takes as arguments two lists l and m of equal length and containing numbers. It should return d, the distance given by the sum of the square residuals between the numbers in the lists:
+
+ This means take the ith element of m from the ith element of l and square the result for all i. Then add all of those to get d. For example: 
+
+```
+> (lstq (list 4.5 5.1 6.2 7.8) (list 1.1 -0.1 6.1 3.8))
+ 54.61
+```
 ### References:
 
 [1] PLT Inc. Racket – a programmable programming language.
