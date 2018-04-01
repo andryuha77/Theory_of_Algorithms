@@ -148,7 +148,7 @@ This task is similar to the previous one hamilton-weight but involves comparison
   '(0 0 0 1 0 1 1 1)
 ```
 #### Solution steps: 
-* Define function maj  that takes three lists
+* Defined function maj  that takes three lists
 * if the value of list x null, return empty space
 * else go through condition to see where two or more of x, y and z contain 1’s. Comparing values of x with y and x with z if they are equal adding x to the new list else value of y added.
 ---
@@ -159,17 +159,21 @@ This task is similar to the previous one hamilton-weight but involves comparison
 ```
 #### Solution steps: 
 This problem was easy to complete by slightly modifying the previous solution to number 7 problem.
-* Define function chse that takes three lists
+* Defined function chse that takes three lists
 * if the value of list x null, return empty space
 * Then go thru statement and check if the list x contains 0 or 1 respectively adding necessary values to the new list.
 
 ---
-9. Write a function sod2 in Racket that takes three lists x, y and z of equal length and containingonly0’sand1’s. Itshouldreturnalistcontaininga1wherethenumberof 1’s in a given position in x, y and z contains an odd nubmer of 1’s, and 0 otherwise. For example:
+9. Write a function sod2 in Racket that takes three lists x, y and z of equal length and containing only 0’s and 1’s. It shoul dreturn a list containing a 1 wherethenumber of 1’s in a given position in x, y and z contains an odd nubmer of 1’s, and 0 otherwise. For example:
 ```
 > (sod2 (list 0 0 0 0 1 1 1 1) (list 0 0 1 1 0 0 1 1) (list 0 1 0 1 0 1 0 1))
  '(0 1 1 0 1 0 0 1)
 ```
 #### Solution steps: 
+* Defined function chse that takes three lists
+* if the value of list x null, return empty space
+* Then, using modulo, went thru condition to check if the sum of values from 3 lists odd or even, respectively adding necessary values to the new list.
+
 ---
 10. Write a function lstq in Racket that takes as arguments two lists l and m of equal length and containing numbers. It should return d, the distance given by the sum of the square residuals between the numbers in the lists:
 

@@ -10,7 +10,7 @@
 ; > (chse (list 0 0 0 0 1 1 1 1) (list 0 0 1 1 0 0 1 1) (list 0 1 0 1 0 1 0 1))
 ; '(0 1 0 1 0 0 1 1)
 
-;maj function
+;Define chse function
 (define (chse x y z)
     (if (null? x)
         '(); if null return empty
