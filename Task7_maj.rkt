@@ -20,7 +20,7 @@
            (cons (car x) (maj (cdr x) (cdr y) (cdr z)))) ;add x to new list
           ((= (car x) (car z))
            (cons (car x) (maj (cdr x) (cdr y) (cdr z))))   
-          (else (cons (car y) (maj (cdr x) (cdr y) (cdr z))))
+          (else (cons (car y) (maj (cdr x) (cdr y) (cdr z)))); or y value added to new list
         )
     )
 )
@@ -37,5 +37,5 @@
 ;Tests displaying
 (displayln '(Result for x y z:))
 (maj x y z)
-(displayln '(Result for x y z:))
+(displayln '(Result for a b c:))
 (maj a b c)

@@ -149,10 +149,8 @@ This task is similar to the previous one hamilton-weight but involves comparison
 ```
 #### Solution steps: 
 * Define function maj  that takes three lists
-* if the value of list x null return empty space
+* if the value of list x null, return empty space
 * else go through condition to see where two or more of x, y and z contain 1’s. Comparing values of x with y and x with z if they are equal adding x to the new list else value of y added.
-
-Task7_maj
 ---
 8. Write a function chse in Racket that takes three lists x, y and z of equal length and containing only 0’s and 1’s. It should return a list containing the elements of y in the positions where x is 1 and the elements of z otherwise. For example
 ```
@@ -160,7 +158,10 @@ Task7_maj
  '(0 1 0 1 0 0 1 1)
 ```
 #### Solution steps: 
-
+This problem was easy to complete by slightly modifying the previous solution to number 7 problem.
+* Define function chse that takes three lists
+* if the value of list x null, return empty space
+* Then go thru statement and check if the list x contains 0 or 1 respectively adding necessary values to the new list.
 
 ---
 9. Write a function sod2 in Racket that takes three lists x, y and z of equal length and containingonly0’sand1’s. Itshouldreturnalistcontaininga1wherethenumberof 1’s in a given position in x, y and z contains an odd nubmer of 1’s, and 0 otherwise. For example:
