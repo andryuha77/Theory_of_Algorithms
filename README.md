@@ -14,7 +14,8 @@ the basic numerical operators (+, -, *, /, modulo). Other basic functions may be
 but please confirm their use with the lecturer.
 
 ## Research
-# [Racket](https://racket-lang.org/)
+
+# [Racket](https://racket-lang.org/) ![alt text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpyVMbCALufSNo44oqxd7_VcKjX9-sUSyRPm2Uvql3VISFvWEy8A)
 Racket is a general-purpose programming language as well as the world’s first ecosystem for developing and deploying new languages.
 ## Scheme
 
