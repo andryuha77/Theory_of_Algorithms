@@ -39,11 +39,11 @@ It is not necessarily the least efficient method, though it is often less
 efficient then other algorithms.
 
 #### Solution steps:
-* Define a function not_divisible
-* If given number is equal to 1 return true
-* If remainder of n and d = 0 return false
-* if p is equal to 1 pass p-1 into the not_divisible function
-* Loop from 2 to 29 and display F or T 
+* Define a function not_divisible.
+* If given number is equal to 1 return true.
+* If remainder of n and d = 0 return false.
+* if p is equal to 1 pass p-1 into the not_divisible function.
+* Loop from 2 to 29 and display F or T. 
 
 The first taste of functional programming seems very unusual and not easy to use to it.
 
@@ -73,7 +73,7 @@ is n1, and so on. For example:
 
 * Then using odd?  run required calculation.
 
-* Testing collatz-list function wit number 6 and 50
+* Testing collatz-list function wit number 6 and 50.
 ---
 3. Write, from scratch, two functions in Racket. The first is called lcycle. It takes a
 list as input and returns the list cyclically shifted one place to the left. The second
@@ -88,13 +88,13 @@ For example:
 #### Solution steps:
 * [car and cdr](https://docs.racket-lang.org/reference/pairs.html) functions were used to complete this task
 
-* Defining lcycle function
+* Defining lcycle function.
 * Using (append (cdr m) to return elalements of the list excluding first one.
-* Join first element to the end of the list
-* Test lcycle function
-* Define remove-last to remove last element in the list
+* Join first element to the end of the list.
+* Test lcycle function.
+* Define remove-last to remove last element in the list.
 * Define rcycle which return last elemtent and apend it to the start of  ther list.
-* Test rcycle
+* Test rcycle.
 
 ---
 4. Write a function sublsum in Racket that takes a list (of integers) as input and returns
@@ -108,9 +108,9 @@ doesn’t matter. For example:
 '()
 ```
 #### Solution steps:
-* Defined sublsum function which checks if sum of list equal 0 by using apply + list
+* Defined sublsum function which checks if sum of list equal 0 by using apply + list.
 
-* Defined 3 lists a,b and c
+* Defined 3 lists a,b and c.
 
 * Test by [filter](https://docs.racket-lang.org/reference/pairs.html?q=filter#%28def._%28%28lib._racket%2Fprivate%2Flist..rkt%29._filter%29%29) all [cobinations](https://docs.racket-lang.org/reference/pairs.html?q=combinations#%28def._%28%28lib._racket%2Flist..rkt%29._combinations%29%29) of the lists
 
@@ -148,8 +148,8 @@ This task is similar to the previous one hamilton-weight but involves comparison
   '(0 0 0 1 0 1 1 1)
 ```
 #### Solution steps: 
-* Defined function maj  that takes three lists
-* if the value of list x null, return empty space
+* Defined function maj  that takes three lists.
+* if the value of list x null, return empty space.
 * else go through condition to see where two or more of x, y and z contain 1’s. Comparing values of x with y and x with z if they are equal adding x to the new list else value of y added.
 ---
 8. Write a function chse in Racket that takes three lists x, y and z of equal length and containing only 0’s and 1’s. It should return a list containing the elements of y in the positions where x is 1 and the elements of z otherwise. For example
@@ -159,8 +159,8 @@ This task is similar to the previous one hamilton-weight but involves comparison
 ```
 #### Solution steps: 
 This problem was easy to complete by slightly modifying the previous solution to number 7 problem.
-* Defined function chse that takes three lists
-* if the value of list x null, return empty space
+* Defined function chse that takes three lists.
+* if the value of list x null, return empty space.
 * Then go thru statement and check if the list x contains 0 or 1 respectively adding necessary values to the new list.
 
 ---
@@ -170,7 +170,7 @@ This problem was easy to complete by slightly modifying the previous solution to
  '(0 1 1 0 1 0 0 1)
 ```
 #### Solution steps: 
-* Defined function chse that takes three lists
+* Defined function sod2 that takes three lists
 * if the value of list x null, return empty space
 * Then, using modulo, went thru condition to check if the sum of values from 3 lists odd or even, respectively adding necessary values to the new list.
 
@@ -183,6 +183,16 @@ This problem was easy to complete by slightly modifying the previous solution to
 > (lstq (list 4.5 5.1 6.2 7.8) (list 1.1 -0.1 6.1 3.8))
  54.61
 ```
+#### Solution steps: 
+* Defined function elstq that takes two lists.
+* If the value of list x or y null, return 0.
+* Take away y values from x values list.
+* Multiply by same value to get square and pas to sumL function.
+* Defined function sumL that takes all sum list values and adding them.
+* Defined lists onf numbers.
+* Tested and display result that matches the problem definition.
+
+---
 ### References:
 
 [1] PLT Inc. Racket – a programmable programming language.
